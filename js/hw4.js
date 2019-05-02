@@ -133,10 +133,11 @@
         div.transition()
           .duration(200)
           .style("opacity", .9);
-        div.html(d.location + "<br/>Population:" + numberWithCommas(d["pop_mlns"] * 1000000) +
-        "<br/>Year: " + d["time"] +
-        "<br/>Life Expectancy: " + d["life_expectancy"] +
-        "<br/>Fertility: " + d["fertility_rate"])
+        div.html(d.location +
+          "<br/>Year: " + d["time"] +
+          "<br/>Population:" + numberWithCommas(d["pop_mlns"] * 1000000) +
+          "<br/>Life Expectancy: " + d["life_expectancy"] +
+          "<br/>Fertility: " + d["fertility_rate"])
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px")
           .style("width", "150px")
